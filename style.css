@@ -1,13 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div{
-    display: flex;
-    width: 100px;
-    height: 50px;
-    border: 1px solid black;
-    margin: 20px;
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px;
+}
+
+#inputDeRedirecionamento {
+  height: 50px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 20px;
+}
+
+#redirecionar {
+  height: 40px;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionamento</title>
+  <script>
+    function redirecionar() {
+      const codigo = document.getElementById('codigo').value.trim().toUpperCase(); // Captura o valor digitado e converte para maiúsculas
+      const links = {
+        'ADMIN': 'https://wilgnerjr.github.io/projetoTupi/', // Link para o código ADMIN
+        'USER': 'https://link-para-usuario.com', // Link para o código USER
+        'GUEST': 'https://link-para-visitante.com', // Link para o código GUEST
+        '77A': 'https://www.instagram.com/wilgner_2003/' // Link para o código 77A
+      };
+
+      if (links[codigo]) {
+        window.location.href = links[codigo]; // Redireciona para o link correspondente
+      } else {
+        alert('Código inválido!'); // Exibe uma mensagem de erro se o código não for encontrado
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Digite seu código</h1>
+  <input type="text" id="codigo" placeholder="Digite o código aqui" required>
+  <button onclick="redirecionar()">Avançar</button>
+</body>
+</html>

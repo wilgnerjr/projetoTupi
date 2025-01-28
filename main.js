@@ -5,7 +5,7 @@ function redirecionar() {
     USER: "https://link-para-usuario.com", // Link para o código USER
     GUEST: "https://link-para-visitante.com", // Link para o código GUEST
     "77A": "https://www.instagram.com/wilgner_2003/", // Link para o código 77A
-    "MZX9059": "https://mail.google.com/mail/u/0/#inbox",
+    "MZX9059": "https://docs.google.com/spreadsheets/d/1FjrojtBZ1KgDvlgoXqj0srqzca_whMdWdkZoxvum_kI/edit?usp=sharing",
   };
 
   if (links[codigo]) {
